@@ -1,0 +1,107 @@
+body{
+    .navibar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        background-color: #EFEFEF;
+        align-items: center;
+        padding: 15px 5vw;
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .right-nav{
+            div{
+                padding: 5px;
+            }
+        }
+        .circle-backgroud{
+            background-color: black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+    }
+    .header{
+        padding: 15px 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+        .branding{
+            font-weight: bold;
+            font-size: 40px;
+            .orange{
+                background-color: #f16821;
+                width: 10px;
+                height: 10px;
+                margin-left: -5px;
+                display: inline-block;
+            }
+        }
+        .nav{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                li{
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: black;
+                    }
+                }
+                .nav-active{
+                    color: $primary;
+                }
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991.98px){
+    body{
+        .navibar{
+            .right-nav{
+                .text{
+                    display: none;
+                }
+                .phone{
+                    margin-right: 15px;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1199.98px){
+    .header{
+        .nav{
+            display: none;
+        }
+        img{
+            display: block !important; 
+        }
+    }
+}

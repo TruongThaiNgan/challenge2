@@ -1,0 +1,48 @@
+.summer-sale{
+    color: white ;
+    text-align: center;
+    padding-top: 20px;
+    padding: 30px;
+    h1{
+        color: white !important;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .cal{
+        .cal-white{
+            margin: 10px;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 5em;
+            height: 8em;
+            background-color: white;
+            border-radius: 5px;
+            color: $teal;
+            .number{
+                font-size: 3em;
+                margin: 0.3em 0;
+            }
+        }
+    }
+    .btn--transparent0{
+        margin: 30px 0;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 767.98px){
+    .summer-sale{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btn--transparent0{
+            width: 200px;
+        }
+        p{
+            width: 600px;
+        }
+    }
+}

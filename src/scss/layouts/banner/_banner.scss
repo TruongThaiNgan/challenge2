@@ -1,0 +1,97 @@
+body{
+    background-image: url('../img/hero_2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    .main{
+        .banner{
+            color: white;
+            width: 600px;
+            height: 70vh;
+            background-color: #00000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10vw;
+            h1{
+                font-size: 5rem;
+                color: white !important;
+                margin-bottom: 0px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 100;
+            }
+            .btn--transparent0{
+                margin-bottom: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1199.98px) and (min-width: 991.98px){
+    body{
+        .main{
+            .banner{
+                width: 400px !important;
+                h1{
+                    font-size: 4rem;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(min-width: 1199.98px){
+    .banner{
+        .button-banner{
+            display: flex;
+            flex-direction: row !important;
+        }
+    }
+}
+
+@media only screen and(max-width: 991.98px){
+    body{
+        .main{
+            .banner{
+                width: 400px !important;
+                h1{
+                    font-size: 3rem;
+                }
+                .button-banner{
+                    flex-direction: column;
+                    .button-opacity0{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px){
+    body{
+        .main{
+            .banner{
+                width: 90% !important;
+                padding: 0 5%;
+                h1{
+                    font-size: 3rem;
+                }
+                .button-banner{
+                    flex-direction: column;
+                    .btn--transparent0{
+                        width: 100%;
+                        margin-bottom: 5px;
+                        margin-right: 5px;
+                    }
+                    .btn--white{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

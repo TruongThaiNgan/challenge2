@@ -1,0 +1,89 @@
+.testimonials{
+    text-align: center;
+    background-color: white;
+    margin-top: -1px;
+    overflow: hidden;
+    .carousell-list{
+        display: flex;
+        flex-direction: row;
+        width: 400%;
+        transition: 1.4s all ease;
+    }
+    .carousel{
+        width: 100%;
+        &:nth-child(2){
+            .item{
+                .circle{
+                    background: url('../../../img/person_2.jpg');
+                    background-size: contain;
+                }
+            }
+        }
+        &:nth-child(3){
+            .item{
+                .circle{
+                    background: url('../../../img/person_3.jpg');
+                    background-size: contain;
+                }
+            }
+        }
+        &:nth-child(4){
+            .item{
+                .circle{
+                    background: url('../../../img/person_4.jpg');
+                    background-size: contain;
+                }
+            }
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .circle{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: url('../../../img/person_1.jpg');
+                background-size: contain;
+                margin: 30px;
+            }
+            .name{
+                font-weight: 900;
+                font-size: 20px;
+                padding: 10px;
+            }
+            .infor{
+                font-style: italic;
+            }
+        }
+    }
+    .carousel-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0;
+        li{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: gray;
+            border: 2px solid gray;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .carousel-active{
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+
+@media only screen and (min-width: 767.98px){
+    .testimonials{
+        .infor{
+            width: 700px;
+        }
+    }
+}
