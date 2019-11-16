@@ -569,7 +569,7 @@ body {
   .testimonials .carousel {
     width: 100%; }
     .testimonials .carousel:nth-child(2) .item .circle {
-      background: url("../../../img/person_2.jpg");
+      background: url("./img/person_2.jpg");
       background-size: contain; }
     .testimonials .carousel:nth-child(3) .item .circle {
       background: url("../../../img/person_3.jpg");
