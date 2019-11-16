@@ -18,9 +18,12 @@ body>footer{
         }
     }
     .product{
-        img{
+        img {
             width: 90%;
             padding: 5%;
+            path{
+                color: blue;
+            }
         }
         .content{
             a{

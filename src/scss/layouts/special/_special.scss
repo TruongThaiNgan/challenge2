@@ -1,7 +1,7 @@
 .special{
     text-align: center;
     background-color: white;
-    padding: 20px;
+    padding: 100px 20px;
     .services{
         display: flex;
         flex-direction: row;
@@ -20,6 +20,9 @@
             a{
                 color: $primary;
             }
+        }
+        .learn-more{
+            max-height:45px
         }
     }
 }

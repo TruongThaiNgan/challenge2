@@ -15,3 +15,10 @@
 .d-block{
     display: block !important;
 }
+
+.learn-more{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
