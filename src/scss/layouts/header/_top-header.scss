@@ -3,7 +3,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 50px;
+        height: 40px;
         background-color: #EFEFEF;
         align-items: center;
         padding: 15px 5vw;
@@ -14,19 +14,19 @@ body{
         }
         .right-nav{
             div{
-                padding: 5px;
+                margin-left: 10px;
             }
         }
         .circle-backgroud{
             background-color: black;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
+            width: 1.5rem;
+            height: 1.5rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin: 5px;
+            margin-right: 5px;
         }
     }
     .header{
@@ -92,7 +92,7 @@ body{
                     display: none;
                 }
                 .phone{
-                    margin-right: 15px;
+                    margin-right: 5px;
                 }
             }
         }

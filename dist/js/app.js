@@ -91,17 +91,17 @@ const list_sidebar = document.querySelectorAll('.sidebar .list-nav li a');
 
 
 function check_Screen() {
-    if (html.scrollTop <600) {
+    if (html.scrollTop <document.querySelector('.banner').offsetTop) {
         index_nav=0;
-    } else if (html.scrollTop <4200) {
+    } else if (html.scrollTop <document.querySelector('.about-us').offsetTop - window.innerHeight + 200) {
         index_nav=1;
-    } else if (html.scrollTop <5800) {
+    } else if (html.scrollTop <document.querySelector('.summer-sale').offsetTop - window.innerHeight + 200) {
         index_nav=2;
-    } else if (html.scrollTop <6800) {
+    } else if (html.scrollTop <document.querySelector('.testimonials').offsetTop - window.innerHeight + 200) {
         index_nav=3;
-    } else if (html.scrollTop <7400) {
+    } else if (html.scrollTop <document.querySelector('.blog').offsetTop - window.innerHeight + 200) {
         index_nav=4;
-    } else if (html.scrollTop <8100) {
+    } else if (html.scrollTop <document.querySelector('.get-in-touch').offsetTop - window.innerHeight + 200) {
         index_nav=5;
     } else {
         index_nav = 6

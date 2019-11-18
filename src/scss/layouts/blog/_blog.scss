@@ -5,6 +5,7 @@
     color: gray;
     width: 100%;
     padding: 100px 0;
+    box-sizing: border-box;
     article{
         padding: 5%;
         header{
@@ -27,6 +28,7 @@
         main{
             padding: 10px 0;
             text-align: left;
+            max-height: 60px;
         }
         footer{
             text-align: left !important;
@@ -50,7 +52,7 @@
 @media only screen and (max-width: 1199.98px) and (min-width: 767.98px){
     .blog{
         padding: 30px;
-        width:calc(100% - 60px);
+        width:100%;
         .list-arc{
             display: grid;
             grid-template-columns: auto auto;
