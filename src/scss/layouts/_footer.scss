@@ -62,6 +62,9 @@ body>footer{
         i{
             font-size: 20px;
             margin-right: 10px;
+            &:hover{
+                color: $primary;
+            }
         }
     }
 }
