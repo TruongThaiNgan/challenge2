@@ -54,6 +54,11 @@
                 }
             }   
         }
+        &:last-child{
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -89,6 +94,11 @@
             }
             .num{
                 top: 40px !important;
+            }
+            &:last-child{
+                display: flex;
+                flex-direction: row;
+                margin-top: 0;
             }
         }
     }

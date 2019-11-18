@@ -19,6 +19,8 @@ body .navibar {
   background-color: #EFEFEF;
   align-items: center;
   padding: 15px 5vw; }
+  body .navibar i {
+    color: white; }
   body .navibar div {
     display: flex;
     flex-direction: row;
@@ -348,6 +350,10 @@ body {
           padding: 5px; }
         .featured-products .product-item .infor-product .price .price-start {
           text-decoration: line-through; }
+    .featured-products .product-item:last-child {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 30px; }
 
 @media only screen and (min-width: 767.98px) {
   .featured-products {
@@ -371,7 +377,11 @@ body {
         justify-content: center;
         align-items: center; }
       .featured-products .product-item .num {
-        top: 40px !important; } }
+        top: 40px !important; }
+      .featured-products .product-item:last-child {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0; } }
 
 @media only screen and (min-width: 991.98px) {
   .featured-products .product-item .btn-product {
@@ -439,6 +449,8 @@ body {
   margin-top: -1px;
   color: gray;
   padding: 100px 5px; }
+  .leadership i {
+    color: white; }
   .leadership h1 {
     margin-bottom: 50px; }
   .leadership .leader {
@@ -746,8 +758,9 @@ body > footer {
     display: flex;
     flex-direction: row;
     justify-content: left; }
-    body > footer .nav div {
-      margin-right: 7px; }
+    body > footer .nav i {
+      font-size: 20px;
+      margin-right: 10px; }
 
 body > p {
   text-align: center;
